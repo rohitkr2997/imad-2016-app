@@ -15,7 +15,7 @@ var articleOne={
     
 };
 
-/*function createTemplate(data){
+function createTemplate(data){
     
     title=data.title;
     heading=data.heading;
@@ -25,7 +25,7 @@ var articleOne={
     var htmlTemplate=`
     
            
-                <html>
+               <html>
                     <head>
                         <title>
                             ${title}
@@ -51,26 +51,6 @@ var articleOne={
                     
                     </body>
                 </html>
-                
-                
-
-                        <html>
-                            <head>
-                                <link href="/ui/style.css" rel="stylesheet" />
-                            </head>
-                            <body>
-                                <div class="center">
-                                    <img src="/ui/madi.png" class="img-medium"/>
-                                </div>
-                                <br>
-                                <div class="center text-big bold">
-                                    Hi! I am your webapp.
-                                </div>
-                                <script type="text/javascript" src="/ui/main.js">
-                                </script>
-                            </body>
-                        </html>
-
    
     
     
@@ -78,10 +58,10 @@ var articleOne={
     
     return htmlTemplate;
     
-}*/
+}
 
 app.get('/article-one', function (req, res) {
-  res.send('Hello');
+  res.send(createTemplate(articleOne));
 });
 
 app.get('/', function (req, res) {
