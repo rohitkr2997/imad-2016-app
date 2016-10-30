@@ -15,7 +15,7 @@ var articleOne={
     
 };
 
-function createTemplate(data){
+/*function createTemplate(data){
     
     title=data.title;
     heading=data.heading;
@@ -78,10 +78,10 @@ function createTemplate(data){
     
     return htmlTemplate;
     
-}
+}*/
 
 app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articleOne));
+  res.send('Hello');
 });
 
 app.get('/', function (req, res) {
