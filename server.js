@@ -19,7 +19,7 @@ function createTemplate(data){
     
     title=data.title;
     heading=data.heading;
-    data=data.date;
+    date=data.date;
     content=data.content;
     
     var htmlTemplate=`
