@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-/*var articleOne={
+var articleOne={
   
     title:'Article One | Rohit',
     heading:'Article one',
@@ -15,7 +15,7 @@ app.use(morgan('combined'));
     
 };
 
-function createTemplate(data){
+/*function createTemplate(data){
     
     title=data.title;
     heading=data.heading;
