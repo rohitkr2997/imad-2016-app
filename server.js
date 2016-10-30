@@ -15,7 +15,7 @@ var articleOne={
     
 };
 
-/*function createTemplate(data){
+function createTemplate(data){
     
     title=data.title;
     heading=data.heading;
@@ -58,7 +58,7 @@ var articleOne={
     
     return htmlTemplate;
     
-}*/
+}
 
 app.get('/article-one', function (req, res) {
   res.send('rohit');
