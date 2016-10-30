@@ -15,9 +15,9 @@ var articleOne={
     
 };
 
-/*var createTemplate(data){
+function createTemplate(data){
     
-    title=data.title;
+   /* title=data.title;
     heading=data.heading;
     data=data.date;
     content=data.content;
@@ -54,9 +54,9 @@ var articleOne={
    
     
     
-    `;
+    `;*/
     
-}*/
+}
 
 app.get('/article-one', function (req, res) {
   res.send('article-one');
