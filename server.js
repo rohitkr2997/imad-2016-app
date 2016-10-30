@@ -17,7 +17,7 @@ var articleOne={
 
 function createTemplate(data){
     
-   /* title=data.title;
+    title=data.title;
     heading=data.heading;
     date=data.date;
     content=data.content;
@@ -25,7 +25,7 @@ function createTemplate(data){
     var htmlTemplate=`
     
            
-                <html>
+               /* <html>
                     <head>
                         <title>
                             ${title}
@@ -50,11 +50,31 @@ function createTemplate(data){
                         
                     
                     </body>
-                </html>
+                </html>*/
+                
+                
+
+                        <html>
+                            <head>
+                                <link href="/ui/style.css" rel="stylesheet" />
+                            </head>
+                            <body>
+                                <div class="center">
+                                    <img src="/ui/madi.png" class="img-medium"/>
+                                </div>
+                                <br>
+                                <div class="center text-big bold">
+                                    Hi! I am your webapp.
+                                </div>
+                                <script type="text/javascript" src="/ui/main.js">
+                                </script>
+                            </body>
+                        </html>
+
    
     
     
-    `;*/
+    `;
     
     return htmlTemplate;
     
