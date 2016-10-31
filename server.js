@@ -96,7 +96,7 @@ app.get('/counter', function(req,res){
 
 var pool = new Pool(config);
 
-/*app.get('/test-db', function(){
+app.get('/test-db', function(){
     
    pool.query('SELECT * FROM test', function(err,result){
        
@@ -109,7 +109,7 @@ var pool = new Pool(config);
        
    });    
     
-});*/
+});
 
 app.get('/submit-name',function(req,res){
     
