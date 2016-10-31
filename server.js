@@ -66,7 +66,7 @@ function createTemplate(data){
                         </h3>
                         <br>
                         <div>
-                            ${date}
+                            ${date.toDateString()}
                         </div>
                         <div class="center text-big bold">
                            ${content}
