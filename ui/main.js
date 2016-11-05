@@ -93,13 +93,13 @@ var submit_login =document.getElementById('submit_login');
 
 submit_login.onclick=function(){
     
-        alert('Hello');
+      
   
     
      var request =new XMLHttpRequest();
     
     request.onreadystatechange =function(){
-        
+          alert('Hello');
         if(request.readyState===XMLHttpRequest.DONE){
             
             if(request.status===200){
