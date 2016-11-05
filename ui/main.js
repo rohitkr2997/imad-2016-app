@@ -89,9 +89,9 @@ submit.onclick=function(){
 };
 
 
-/*var submit =document.getElementById('submit_btn');
+var submit_login =document.getElementById('submit_login');
 
-submit.onclick=function(){
+submit_login.onclick=function(){
     
     
   
@@ -128,4 +128,4 @@ submit.onclick=function(){
     request.send(JSON.stringify({username: username, password: password}));
     
   
-};*/
+};
