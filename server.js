@@ -157,8 +157,8 @@ app.get('/', function (req, res) {
 });
 
 app.get('/hash/:input',function(req,res){
-    var hashString = hash(req.params.input, 'this-is-some-random-string');
-    res.send(hashstring);
+    var hashedString = hash(req.params.input, 'this-is-some-random-string');
+    res.send(hashedstring);
     
     
 });
