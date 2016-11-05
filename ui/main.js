@@ -17,7 +17,7 @@ img.onclick= function(){
     
 };*/
 
-/*var button = document.getElementById('counter');
+var button = document.getElementById('counter');
 
 
 button.onclick = function(){
@@ -48,7 +48,7 @@ button.onclick = function(){
 };
 
 
-var submit =document.getElementById('submit_btn');
+/*var submit =document.getElementById('submit_btn');
 
 submit.onclick=function(){
     
@@ -86,10 +86,10 @@ submit.onclick=function(){
     request.send(null);
     
   
-};*/
+};
 
 
-var submit =document.getElementById('submit_btn');
+/*var submit =document.getElementById('submit_btn');
 
 submit.onclick=function(){
     
@@ -128,4 +128,4 @@ submit.onclick=function(){
     request.send(JSON.stringify({username: username, password: password}));
     
   
-};
+};*/
