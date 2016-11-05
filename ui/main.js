@@ -96,22 +96,22 @@ submit_login.onclick=function(){
       
   
     
-     var request =new XMLHttpRequest();
+     var request_login =new XMLHttpRequest();
     
-    request.onreadystatechange =function(){
+    request_login.onreadystatechange =function(){
           alert('Hello');
-        if(request.readyState===XMLHttpRequest.DONE){
+        if(request_login.readyState===XMLHttpRequest.DONE){
             
-            if(request.status===200){
+            if(request_login.status===200){
                 
                 console.log('user logged in');
                 alert('Logged in successfully ');
                 
-            }else if(request.status===403){
+            }else if(request_login.status===403){
                 
                 alert('Username/Password is incorrect');
             }
-            else if(request.status===500){
+            else if(request_login.status===500){
                 
                 alert('Something went wrong on the server');
                 
@@ -122,10 +122,10 @@ submit_login.onclick=function(){
     
       var username =document.getElementById('username').value;
       var password =document.getElementById('password').value;
-      var name=nameInput.value;
-    request.open('POST','http://rohitkr2997.imad.hasura-app.io/login',true);
-    request.setRequestHeader('Content-Type' , 'application/json');
-    request.send(JSON.stringify({username: username, password: password}));
+      
+    request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/login',true);
+    request_login.setRequestHeader('Content-Type' , 'application/json');
+    request_login.send(JSON.stringify({username: username, password: password}));
     
   
 };
