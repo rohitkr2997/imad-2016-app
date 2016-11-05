@@ -99,7 +99,7 @@ submit_login.onclick=function(){
      var request_login =new XMLHttpRequest();
     
     request_login.onreadystatechange =function(){
-          alert('Hello');
+        
         if(request_login.readyState===XMLHttpRequest.DONE){
             
             if(request_login.status===200){
