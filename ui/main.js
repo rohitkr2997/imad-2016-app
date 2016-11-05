@@ -87,3 +87,45 @@ submit.onclick=function(){
     
   
 };
+
+
+var submit2 =document.getElementById('submit_btn2');
+
+submit2.onclick=function(){
+    
+    
+  
+    
+     var request =new XMLHttpRequest();
+    
+    request.onreadystatechange =function(){
+        
+        if(request.readyState===XMLHttpRequest.DONE){
+            
+            if(request.status===200){
+                
+                console.log('user logged in');
+                alert('Logged in successfully ');
+                
+            }else if(request.status===403){
+                
+                alert('Username/Password is incorrect');
+            }
+            else if(request.status===500){
+                
+                alert('Something went wrong on the server');
+                
+            }
+        }
+        
+    }; 
+    
+      var username =document.getElementById('username').value;
+      var password =document.getElementById('password').value;
+      var name=nameInput.value;
+    request.open('POST','http://rohitkr2997.imad.hasura-app.io/login',true);
+    request.setRequestHeader('Content-Type' , 'application/json');
+    request.send(JSON.stringify({username: username, password: password}));
+    
+  
+};
