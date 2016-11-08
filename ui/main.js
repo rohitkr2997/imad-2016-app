@@ -120,8 +120,8 @@ submit_login.onclick=function(){
         
     }; 
     
-      var username =document.getElementById('username_').value;
-      var password =document.getElementById('password_').value;
+      var username =document.getElementById('username').value;
+      var password =document.getElementById('password').value;
       
     request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/login',true);
     request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/test',true);
