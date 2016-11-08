@@ -261,10 +261,15 @@ app.get('/logout', function(req,res){
     
 });
 
-app.use('/static', express.static(path.join(__dirname, 'ui/login')))
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+
+app.get('/css/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login/css/style.css'));
 });
 
 app.get('/ui/main.js', function (req, res) {
