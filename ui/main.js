@@ -89,7 +89,7 @@ submit.onclick=function(){
 };
 
 
-var submit_login =document.getElementById('submit_login_');
+var submit_login =document.getElementById('submit_login');
 
 submit_login.onclick=function(){
     
