@@ -124,7 +124,7 @@ submit_login.onclick=function(){
       var password =document.getElementById('password').value;
       
     request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/login',true);
-    request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/test',true);
+  //  request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/test',true);
     request_login.setRequestHeader('Content-Type' , 'application/json');
     request_login.send(JSON.stringify({username: username, password: password}));
     
