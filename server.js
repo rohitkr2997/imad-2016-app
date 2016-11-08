@@ -276,6 +276,8 @@ app.get('/js/index.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'login/js/index.js'));
 });
 */
+
+app.use('/static', express.static('public'));
 app.use('/static', express.static(path.join(__dirname, 'ui/login')));
 
 app.get('/ui/main.js', function (req, res) {
