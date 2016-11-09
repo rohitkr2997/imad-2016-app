@@ -89,52 +89,7 @@ submit.onclick=function(){
 };
 
 
- var form = document.getElementById("myform");
-
-  // to takeover its submit event.
-  form.addEventListener("submit", function (event) {
-    
-          alert('hello.......');
-  
-    
-     var request_login =new XMLHttpRequest();
-    
-    request_login.onreadystatechange =function(){
-        
-        if(request_login.readyState===XMLHttpRequest.DONE){
-            
-            if(request_login.status===200){
-                
-                console.log('user logged in');
-                alert('Logged in successfully ');
-                
-            }else if(request_login.status===403){
-                
-                alert('Username/Password is incorrect');
-            }
-            else if(request_login.status===500){
-                
-                alert('Something went wrong on the server');
-                
-            }
-        }
-        
-    }; 
-    
-      var username =document.getElementById('username').value;
-      var password =document.getElementById('password').value;
-      
-    request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/login',true);
-    request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/test',true);
-    request_login.setRequestHeader('Content-Type' , 'application/json');
-    request_login.send(JSON.stringify({username: username, password: password}));
-    
-    
-    
-    
-  });
-});
-
+ 
 
 var submit_login =document.getElementById('submit_login');
 
