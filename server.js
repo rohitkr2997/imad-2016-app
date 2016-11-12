@@ -170,6 +170,11 @@ app.get('/login', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'login/index.html'));
 });
 
+app.post('/login', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login/index.html'));
+});
+
+
 function hash (input,salt){
     var hashed = crypto.pbkdf2Sync(input,salt,10000,512,'sha512'); 
     return ["pbkdf2","10000",salt,hashed.toString('hex')].join('$');
