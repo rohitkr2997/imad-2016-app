@@ -170,9 +170,7 @@ app.get('/login', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'login/index.html'));
 });
 
-app.post('/login', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'login/index.html'));
-});
+
 
 
 function hash (input,salt){
