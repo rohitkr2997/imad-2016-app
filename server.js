@@ -191,7 +191,7 @@ app.post('/print',function(req,res){
         
 });
 
-app.get('/printfile',function(req,res){
+app.post('/printfile',function(req,res){
         
         
            res.sendFile(path.join(__dirname, 'ui', 'print.html'));
