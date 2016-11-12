@@ -191,12 +191,12 @@ app.post('/print',function(req,res){
         
 });
 
-app.get('/print2',function(req,res){
+app.get('/printfile',function(req,res){
         
          username=req.body.username;
          password=req.body.password;
-        
-        res.send("email="+username+"password"+password);
+           res.sendFile(path.join(__dirname, 'ui', 'print.html'));
+      
         
 });
 
