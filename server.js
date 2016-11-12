@@ -187,6 +187,7 @@ app.post('/print',function(req,res){
         
          username=req.body.username;
          password=req.body.password;
+         res.send(""+username+""+password);
             
         
 });
