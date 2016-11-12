@@ -187,11 +187,11 @@ app.post('/print',function(req,res){
         
          username=req.body.username;
          password=req.body.password;
-        
+            
         
 });
 
-app.post('/print2',function(req,res){
+app.get('/print2',function(req,res){
         
          username=req.body.username;
          password=req.body.password;
