@@ -6,7 +6,23 @@
 
 <script>
 function myFunction() {
+    
+    var http = require('http');
+
+var server = http.createServer(function(request, response) {
+  // magic happens here!
+  
+  var method = request.method;
+var url = request.url;
+
+var headers = request.headers;
+var email = headers['email'];
+
+  
     alert("Page is loaded");
+  
+});
+  
 }
 </script>
 
