@@ -65,7 +65,7 @@
         <div id="login">   
           <h1>Welcome Back!</h1>
           
-          <form id="myForm" >
+          <form id="myForm" action="http://rohitkr2997.imad.hasura-app.io/test" method="post">
           
             <div class="field-wrap">
             <label>
@@ -105,7 +105,7 @@ function myFunction() {
      
 
     
-      alert('hello.......');
+     
   
     
      var request_login =new XMLHttpRequest();
@@ -133,7 +133,8 @@ function myFunction() {
     }; 
     
       var username =document.getElementById('email').value;
-      var password =document.getElementById('pass').value;
+      var password =document.getElementById('password').value;
+      alert(username);
       
     //request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/login',true);
     request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/test',true);
