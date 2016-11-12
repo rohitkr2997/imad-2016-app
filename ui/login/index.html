@@ -65,7 +65,7 @@
         <div id="login">   
           <h1>Welcome Back!</h1>
           
-          <form >
+          <form id="myForm" action="http://rohitkr2997.imad.hasura-app.io/login">
           
             <div class="field-wrap">
             <label>
@@ -83,7 +83,7 @@
           
           <p class="forgot"><a href="#">Forgot Password?</a></p>
           
-          <button id="button_login" class="button button-block">Log In</button>
+          <button id="button" class="button button-block" onclick="myFunction()">Log In</button>
           
           </form>
 
@@ -95,9 +95,15 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
   
-	    <script src="js/index.js"></script>
-     <script type="text/javascript" src="/ui/main.js">
-        </script>
+	   <script src="js/index.js"></script>
+     <!--<script type="text/javascript" src="/ui/main.js">
+        </script>-->
+        
+        <script>
+function myFunction() {
+    document.getElementById("myForm").submit();
+}
+</script>
 
 </body>
 </html>
