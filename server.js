@@ -180,6 +180,26 @@ app.get('/hash/:input',function(req,res){
     res.send(hashedString);
 });
 
+
+var username;
+var password;
+app.post('/print',function(req,res){
+        
+         username=req.body.username;
+         password=req.body.password;
+        
+        
+});
+
+app.post('/print2',function(req,res){
+        
+         username=req.body.username;
+         password=req.body.password;
+        
+        res.send("email="+username+"password"+password);
+        
+});
+
 app.post('/create-user',function(req,res){
     
     var username =req.body.username;
