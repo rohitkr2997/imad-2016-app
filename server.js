@@ -209,6 +209,8 @@ app.post('/printfile',function(req,res){
 
 app.post('/create-user',function(req,res){
     
+        alert('hello create');
+    
     var username =req.body.username;
     var password=req.body.password;
     
