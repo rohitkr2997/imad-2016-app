@@ -133,9 +133,9 @@ submit_login.onclick=function(){
   
 };
 
-var submit_register =document.getElementById('submit_register');
+var reg =document.getElementById('reg');
    
-submit_register.onclick=function(){
+reg.onclick=function(){
     
       alert('hello.......');
   
