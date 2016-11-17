@@ -8,8 +8,8 @@
        <h1>Enter Credentials to register</h1>
        
              <div>
-                <input type="text" id="username_register" placeholder="username"/>
-                <input type="password" id="password_register"/>
+                <input type="text" id="user" placeholder="username"/>
+                <input type="password" id="pas"/>
                   <button id="reg" onclick="func()">Register</button> 
             </div>
             
@@ -20,7 +20,10 @@
                  var func=function(){
                         
                                                     
-                                                           
+                                  var username =document.getElementById('user').value;
+                                  var password =document.getElementById('pass').value;
+                                  
+                                  alert('...'+username);                         
                               
                                 
                                  var request_login =new XMLHttpRequest();
@@ -47,9 +50,7 @@
                                     
                                 }; 
                                 
-                                  var username =document.getElementById('username_register').value;
-                                  var password =document.getElementById('password_register').value;
-                                  
+                                
                                   alert("..."+username+" "+password);
                                 request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/create-user',true);
                                 request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/test',true);
