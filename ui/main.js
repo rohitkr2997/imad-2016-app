@@ -133,47 +133,4 @@ submit_login.onclick=function(){
   
 };
 
-var reg =document.getElementById('reg');
-   
-reg.onclick=function(){
-    
-      alert('hello.......');
-  
-    
-     var request_login =new XMLHttpRequest();
-    
-    request_login.onreadystatechange =function(){
-        
-        if(request_login.readyState===XMLHttpRequest.DONE){
-            
-            if(request_login.status===200){
-                
-                console.log('user logged in');
-                alert('Logged in successfully ');
-                
-            }else if(request_login.status===403){
-                
-                alert('Username/Password is incorrect');
-            }
-            else if(request_login.status===500){
-                
-                alert('Something went wrong on the server');
-                
-            }
-        }
-        
-    }; 
-    
-      var username =document.getElementById('username_register').value;
-      var password =document.getElementById('password_register').value;
-      
-    request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/create-user',true);
-    request_login.open('POST','http://rohitkr2997.imad.hasura-app.io/test',true);
-    request_login.setRequestHeader('Content-Type' , 'application/json');
-    request_login.send(JSON.stringify({username: username, password: password}));
-    
-  
-};
-
-
-
+alert('mt...');
