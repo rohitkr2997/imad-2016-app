@@ -207,7 +207,7 @@ app.post('/printfile',function(req,res){
         
 });
 
-app.post('/create-user',function(req,res){
+app.post('/create',function(req,res){
     
         alert('hello create');
     
