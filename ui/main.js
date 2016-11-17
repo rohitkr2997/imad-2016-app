@@ -135,6 +135,3 @@ submit_login.onclick=function(){
 
 
 
-var register =document.getElementById('reg');
-
-alert('hello'+register);
