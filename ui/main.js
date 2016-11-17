@@ -133,4 +133,8 @@ submit_login.onclick=function(){
   
 };
 
-alert('mt...');
+
+
+var register =document.getElementById('reg');
+
+alert('hello'+register);
