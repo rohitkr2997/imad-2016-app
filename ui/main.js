@@ -133,7 +133,7 @@ submit_login.onclick=function(){
   
 };
 
-var register =document.getElementById('register');
+var register =document.getElementById('submit_register');
 
 register.onclick=function(){
     
