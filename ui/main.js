@@ -143,7 +143,7 @@ submit_register.onclick=function(){
      var request_login =new XMLHttpRequest();
     
     request_login.onreadystatechange =function(){
-        
+        alert('hello');
         if(request_login.readyState===XMLHttpRequest.DONE){
             
             if(request_login.status===200){
